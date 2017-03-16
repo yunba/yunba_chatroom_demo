@@ -1,8 +1,9 @@
 var yunbaCfg = {
     // 替换为您的 appkey
     appkey: '52fcc04c4dc903d66d6f8f92',
-    server: 'http://sock.yunba.io',
-    port: '3000'
+    // not required
+    // server: 'http://sock.yunba.io',
+    // port: '3000'
 };
 var uploadServer = 'http://127.0.0.1:3900';
 var uploadPath = '/file';
