@@ -1,0 +1,116 @@
+.wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.left {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    background: #4d5250;
+    color: #fff;
+}
+.main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #2C2D30;
+}
+
+
+
+.logo {
+    font-size: 16px;
+    margin: 10px;
+    padding: 0;
+}
+.user-list,
+.message-list {
+    padding: 0;
+    margin: 0;
+}
+.message-list li {
+    margin: 10px;
+    font-size: 14px;
+    list-style: none;
+}
+.message-list .system-message {
+    text-align: center;
+    color: #ccc;
+}
+.message-list .message-head {
+    font-weight: bold;;
+}
+.message-list .message-body {
+    margin-top: 5px;
+    line-height: 24px;
+}
+.message-list .post-time {
+    font-size: 12px;
+    font-weight: normal;
+    color: #9e9ea6;   
+}
+
+.user-list li {
+    margin: 10px;
+    font-size: 14px;
+    list-style: none;
+    opacity: 0.6;
+}
+
+.input-box-outer {
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.input-box .input-text-message {
+    width: 100%;
+    height: 38px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+.input-box .button-group {
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+    padding: 0px;
+    background: #fff;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0px;
+}
+.input-box .button-group .button {
+    display: inline-block;
+    margin: 0;
+    background: #fff;
+    padding: 0;
+    width: 70px;
+    height: 36px;
+    border: none;
+    border-left: 1px solid #ccc;
+    outline: none;
+    overflow: hidden;
+    line-height: 36px;
+    vertical-align: top;
+    text-align: center;
+}
+.input-box .input-file-message {
+    overflow: hidden;
+}
+.input-box .input-file-message input {
+    display: none;
+}
+.input-box .input-record-message:hover {
+
+}
+
+.input-box,
+.message-list{
+    margin-left: 200px;
+}
