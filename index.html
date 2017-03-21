@@ -22,18 +22,18 @@
         <div id="app"></div>
         <script type="text/x-template" id="app-template">
           <div class="wrap">
-            <div class="left">
+            <div class="left" id="left">
                 <h1 class="logo">Yunba Demo</h1>
                 <ul class="user-list">
                     <user v-for="user in users" v-bind:user="user" v-bind:me="me">
                     </user>
                 </ul> 
             </div>
-            <div class="main">
-                <ul class="message-list">
+            <div class="main" id="main">
+                <ul class="message-list" id="message-list">
                     <message v-for="message in messages" v-bind:message="message"></message>
                 </ul> 
-                <div class="input-box">
+                <div class="input-box" id="input-box">
                     <div class="input-box-outer">
                         <div class="button-group">
                             <button type="button" class="input-record-message button" id="" v-on:click="record">{{isRecording? '停止' : '录音'}}</button><label class="input-file-message button"><input v-on:change="upload" type="file" name="file" id="file" />文件</label><button type="button" class="input-send-message button" v-on:click="sendMessage">发送</button>
