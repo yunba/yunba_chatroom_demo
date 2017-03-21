@@ -23,6 +23,9 @@ Vue.component('message', {
         addUploadServer: function(content) {
             return uploadServer + '/' + content;
         }
+    },
+    mounted: function() {
+        this.$el.scrollIntoView();
     }
 });
 
@@ -178,6 +181,16 @@ var app = new Vue({
           var now = +new Date();
           while((+new Date()) - now < 200){};
         };
+
+
+        function setHeight() {
+            var bodyHeight = document.body.scrollHeight;
+            var msgListHeight = bodyHeight - document.getElementById('input-box').scrollHeight;
+            document.getElementById('message-list').style.height = msgListHeight + 'px';
+            document.getElementById('left').style.height = bodyHeight + 'px';
+        }
+        window.onresize = setHeight;
+        setHeight();
     }
 });
 
@@ -225,5 +238,7 @@ function onMessage(msg) {
         }
     }
 }
+
+
 
 
